@@ -16,7 +16,7 @@ public class AutomataWorld : OgoWorld
 
     private void Start()
     {
-        Generate(300);
+        Generate(400);
     }
 
     /// <summary>

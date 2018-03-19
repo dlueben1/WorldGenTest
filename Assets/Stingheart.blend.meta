@@ -1,0 +1,1966 @@
+fileFormatVersion: 2
+guid: d7fe9f967d220e145b7c3d59272dc7ef
+timeCreated: 1521417816
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Chest
+    100002: Hand_L
+    100004: Hand_R
+    100006: Head
+    100008: High_Abdomen
+    100010: High_Wing_L
+    100012: High_Wing_R
+    100014: Low_Abdomen
+    100016: Low_Wing_L
+    100018: Low_Wing_R
+    100020: Lower_Arm_L
+    100022: Lower_Arm_R
+    100024: meshStingblast
+    100026: Neck
+    100028: Shoulder_L
+    100030: Shoulder_R
+    100032: Skel_Stingblast
+    100034: //RootNode
+    100036: Torso
+    100038: Upper_Arm_L
+    100040: Upper_Arm_R
+    400000: Chest
+    400002: Hand_L
+    400004: Hand_R
+    400006: Head
+    400008: High_Abdomen
+    400010: High_Wing_L
+    400012: High_Wing_R
+    400014: Low_Abdomen
+    400016: Low_Wing_L
+    400018: Low_Wing_R
+    400020: Lower_Arm_L
+    400022: Lower_Arm_R
+    400024: meshStingblast
+    400026: Neck
+    400028: Shoulder_L
+    400030: Shoulder_R
+    400032: Skel_Stingblast
+    400034: //RootNode
+    400036: Torso
+    400038: Upper_Arm_L
+    400040: Upper_Arm_R
+    4300000: meshStingblast
+    7400000: Default Take
+    7400002: DAtk1
+    7400004: Dodge1
+    7400006: Dodge2
+    7400008: Dodge3
+    7400010: Dodge4
+    7400012: Guard1
+    7400014: Guard1a
+    7400016: Hurt1
+    7400018: Hurt2
+    7400020: Hurt3
+    7400022: Hurt4
+    7400024: Idle0
+    7400026: Idle0_001
+    7400028: Idle1
+    7400030: MFwd0
+    7400032: MFwd1
+    7400034: MJump
+    7400036: None
+    7400038: PAtk1
+    7400040: PAtk2
+    7400042: SAtk1
+    7400044: SAtk1a
+    7400046: SAtk2
+    7400048: SAtk3
+    7400050: SAtk3a
+    9500000: //RootNode
+    13700000: meshStingblast
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: DAtk1
+      takeName: DAtk1
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dodge1
+      takeName: Dodge1
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dodge2
+      takeName: Dodge2
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dodge3
+      takeName: Dodge3
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dodge4
+      takeName: Dodge4
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard1
+      takeName: Guard1
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard1a
+      takeName: Guard1a
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hurt1
+      takeName: Hurt1
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hurt2
+      takeName: Hurt2
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hurt3
+      takeName: Hurt3
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hurt4
+      takeName: Hurt4
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle0
+      takeName: Idle0
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle0_001
+      takeName: Idle0_001
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle1
+      takeName: Idle1
+      firstFrame: -1
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: MFwd0
+      takeName: MFwd0
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: MFwd1
+      takeName: MFwd1
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: MJump
+      takeName: MJump
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: None
+      takeName: None
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PAtk1
+      takeName: PAtk1
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PAtk2
+      takeName: PAtk2
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SAtk1
+      takeName: SAtk1
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SAtk1a
+      takeName: SAtk1a
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SAtk2
+      takeName: SAtk2
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SAtk3
+      takeName: SAtk3
+      firstFrame: -1
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SAtk3a
+      takeName: SAtk3a
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshStingblast
+        weight: 1
+      - path: Skel_Stingblast
+        weight: 1
+      - path: Skel_Stingblast/Torso
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/High_Wing_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_L/Upper_Arm_L/Lower_Arm_L/Hand_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/Chest/Shoulder_R/Upper_Arm_R/Lower_Arm_R/Hand_R
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/High_Abdomen/Low_Abdomen
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_L
+        weight: 1
+      - path: Skel_Stingblast/Torso/Low_Wing_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.05
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,14 +8,17 @@ public abstract class OgoWorld : MonoBehaviour
     #region Constants
 
     //The size of the tiles
-    protected const int _tileWidth = 3;   //Width of the WHOLE tile
-    protected const int _tileHeight = 3;  //Height of the WHOLE tile
-    public int TileWidth { get { return _tileWidth; } }
-    public int TileHeight { get { return _tileHeight; } }
+    protected const float _tileWidth = 1.5f;                //Width of the WHOLE tile
+    protected const float _tileHeight = 1.5f;               //Height of the WHOLE tile
+    public float TileWidth { get { return _tileWidth; } }
+    public float TileHeight { get { return _tileHeight; } }
     protected const int _tileVerticesTop = 8;
 
+    //"Bumpiness" between tiles
+    protected const float _bumpRange = 0.3f;
+
     //Ratio of inner-tile to outer-tile
-    protected const float _tileRatio = 0.5f;
+    protected const float _tileRatio = 0.4f;
 
     //Heightmap constants
     private const int _blank = -1;
@@ -52,7 +55,11 @@ public abstract class OgoWorld : MonoBehaviour
     /// <summary>
     /// Renders the map
     /// </summary>
-    protected void Render()
+    protected virtual void Render()
+    {
+        StartCoroutine(_Render());
+    }
+    IEnumerator _Render()
     {
         //Iterate through all chunks
         for(int k = 0; k < Chunks.Count; k++)
@@ -80,187 +87,240 @@ public abstract class OgoWorld : MonoBehaviour
             //Setup the vertices/triangles
             List<Vector3> vertices = new List<Vector3>();
             List<int> triangles = new List<int>();
+            yield return null;
 
-            //Iterate through the chunk's heightmap
-            Dictionary<Vector2, int[]> VMap = new Dictionary<Vector2, int[]>();  //Stores a map of what vertices go to which tile
+            //Create each tile
             int[][] heightMap = chunk.HeightMap;
-            int chunkWidth = chunk.Width;
             int chunkHeight = chunk.Height;
-            for(int y = 0; y < chunkHeight; y++)
+            int chunkWidth = chunk.Width;
+            for (int y = 0; y < chunkHeight; y++)
             {
                 for(int x = 0; x < chunkWidth; x++)
                 {
-                    //Is this a tile?
+                    //Determine if there is a tile here
                     if(heightMap[y][x] != _blank)
                     {
-                        //Store it's vertices
-                        int[] myVertices = new int[_tileVerticesTop];
-                        for(int l = 0; l < myVertices.Length; l++)
-                        { myVertices[l] = _blank; }
+                        #region Create the Vertices
 
-                        #region Create Vertex Data
+                        float innerWDist = (_tileWidth / 2) * _tileRatio;
+                        float innerHDist = (_tileHeight / 2) * _tileRatio;
 
-                        ///This is where the UN begins
+                        //Upper Left
+                        vertices.Add(new Vector3(
+                            (_tileWidth * x),
+                            0,
+                            (_tileHeight * y)
+                            ));
 
-                        ///Neighbor Check
+                        //Bottom Left
+                        vertices.Add(new Vector3(
+                            (_tileWidth * x),
+                            0,
+                            (_tileHeight * (y + 1))
+                            ));
 
-                        //Do I have a top neighbor?
-                        if (HasNeighbor(heightMap, x, y, 0, -1, chunkWidth, chunkHeight) != _invalid)
-                        {
-                            //Grab my top neighbor's bottom vertices
-                            int[] topVerts = VMap[new Vector2(x, y - 1)];
-                            myVertices[1] = topVerts[0];
-                            myVertices[4] = topVerts[7];
-                        }
-                        //Do I have a left neighbor?
-                        if (HasNeighbor(heightMap, x, y, -1, 0, chunkWidth, chunkHeight) != _invalid)
-                        {
-                            //Grab my top neighbor's bottom vertices
-                            int[] leftVerts = VMap[new Vector2(x - 1, y)];
-                            myVertices[1] = leftVerts[4];
-                            myVertices[0] = leftVerts[7];
-                        }
-                        /*
-                        //Do I have a right neighbor?
-                        if (HasNeighbor(heightMap, x, y, 1, 0, chunkWidth, chunkHeight) != _invalid)
-                        {
-                            //Grab my top neighbor's bottom vertices
-                            int[] rightVerts = VMap[new Vector2(x + 1, y)];
-                            myVertices[7] = rightVerts[0];
-                            myVertices[4] = rightVerts[1];
-                        }
-                        //Do I have a bottom neighbor?
-                        if (HasNeighbor(heightMap, x, y, 0, 1, chunkWidth, chunkHeight) != _invalid)
-                        {
-                            //Grab my top neighbor's bottom vertices
-                            int[] botVerts = VMap[new Vector2(x, y + 1)];
-                            myVertices[0] = botVerts[1];
-                            myVertices[7] = botVerts[4];
-                        }
-                        */
+                        //Upper Right
+                        vertices.Add(new Vector3(
+                            (_tileWidth * (x+1)),
+                            0,
+                            (_tileHeight * y)
+                            ));
 
-                        ///Now for whatever vertices I DON'T have, create
-                        
-                        //Outer BL
-                        if (myVertices[0] == _blank)
-                        {
-                            myVertices[0] = vertices.Count;
-                            vertices.Add(
-                                new Vector3(
-                                    (_tileWidth * x),
-                                    0,
-                                    (_tileHeight * (y+1))
-                                    ));
-                        }
+                        //Bottom Right
+                        vertices.Add(new Vector3(
+                            (_tileWidth * (x + 1)),
+                            0,
+                            (_tileHeight * (y+1))
+                            ));
 
-                        //Outer UL
-                        if (myVertices[1] == _blank)
-                        {
-                            myVertices[1] = vertices.Count;
-                            vertices.Add(
-                                new Vector3(
-                                    (_tileWidth * x),
-                                    0,
-                                    (_tileHeight * y)
-                                    ));
-                        }
-
-                        //Inner BL
-                        if (myVertices[2] == _blank)
-                        {
-                            myVertices[2] = vertices.Count;
-                            vertices.Add(
-                                new Vector3(
-                                    (_tileWidth * x) + ((_tileWidth / 2) * _tileRatio),
-                                    0,
-                                    (_tileHeight * (y+1)) - ((_tileHeight / 2) * _tileRatio)
-                                    ));
-                        }
+                        //IBR Bump Amount
+                        float iba = 0;//Random.Range(-_bumpRange / 2, 0);
 
                         //Inner UL
-                        if (myVertices[3] == _blank)
-                        {
-                            myVertices[3] = vertices.Count;
-                            vertices.Add(
-                                new Vector3(
-                                    (_tileWidth * x) + ((_tileWidth/2) * _tileRatio),
-                                    0,
-                                    (_tileHeight * y) + ((_tileHeight/2) * _tileRatio)
-                                    ));
-                        }
-
-                        //Outer UR
-                        if (myVertices[4] == _blank)
-                        {
-                            myVertices[4] = vertices.Count;
-                            vertices.Add(
-                                new Vector3(
-                                    (_tileWidth * (x + 1)),
-                                    0,
-                                    (_tileHeight * y)
-                                    ));
-                        }
+                        vertices.Add(new Vector3(
+                            (_tileWidth * x) + innerWDist,
+                            0 + iba,
+                            (_tileHeight * y) + innerHDist
+                            ));
 
                         //Inner UR
-                        if (myVertices[5] == _blank)
-                        {
-                            myVertices[5] = vertices.Count;
-                            vertices.Add(
-                                new Vector3(
-                                    (_tileWidth * (x+1)) - ((_tileWidth / 2) * _tileRatio),
-                                    0,
-                                    (_tileHeight * y) + ((_tileHeight / 2) * _tileRatio)
-                                    ));
-                        }
+                        vertices.Add(new Vector3(
+                            (_tileWidth * (x+1)) - innerWDist,
+                            0,
+                            (_tileHeight * y) + innerHDist
+                            ));
+
 
                         //Inner BR
-                        if (myVertices[6] == _blank)
+                        vertices.Add(new Vector3(
+                            (_tileWidth * (x+1)) - innerWDist,
+                            0 + iba,
+                            (_tileHeight * (y+1)) - innerHDist
+                            ));
+
+                        //Inner BL
+                        vertices.Add(new Vector3(
+                            (_tileWidth * x) + innerWDist,
+                            0,
+                            (_tileHeight * (y+1)) - innerHDist
+                            ));
+
+                        #endregion
+
+                        #region Create Triangles
+
+                        int bottomLeft_i = vertices.Count - 1;
+                        int bottomRight_i = bottomLeft_i - 1;
+                        int upperRight_i = bottomRight_i - 1;
+                        int upperLeft_i = upperRight_i - 1;
+
+                        int bottomRight = upperLeft_i - 1;
+                        int upperRight = bottomRight - 1;
+                        int bottomLeft = upperRight - 1;
+                        int upperLeft = bottomLeft - 1;
+
+                        //Side A ("Left")
+                        triangles.Add(upperLeft);
+                        triangles.Add(bottomLeft);
+                        triangles.Add(bottomLeft_i);
+                        triangles.Add(upperLeft);
+                        triangles.Add(bottomLeft_i);
+                        triangles.Add(upperLeft_i);
+
+                        //Side B ("Right")
+                        triangles.Add(upperRight);
+                        triangles.Add(upperRight_i);
+                        triangles.Add(bottomRight);
+                        triangles.Add(bottomRight_i);
+                        triangles.Add(bottomRight);
+                        triangles.Add(upperRight_i);
+
+                        //Side C ("Top")
+                        triangles.Add(upperLeft_i);
+                        triangles.Add(upperRight);
+                        triangles.Add(upperLeft);
+                        triangles.Add(upperRight_i);
+                        triangles.Add(upperRight);
+                        triangles.Add(upperLeft_i);
+
+                        //Side D ("Bot")
+                        triangles.Add(bottomRight_i);
+                        triangles.Add(bottomLeft_i);
+                        triangles.Add(bottomLeft);
+                        triangles.Add(bottomRight_i);
+                        triangles.Add(bottomLeft);
+                        triangles.Add(bottomRight);
+
+                        //Randomize Inner Square Angle
+                        if (Random.Range(0, 2) == 0)
                         {
-                            myVertices[6] = vertices.Count;
-                            vertices.Add(
-                                new Vector3(
-                                    (_tileWidth * (x+1)) - ((_tileWidth / 2) * _tileRatio),
-                                    0,
-                                    (_tileHeight * (y+1)) - ((_tileHeight / 2) * _tileRatio)
-                                    ));
+                            //Inner Square - "A"
+                            triangles.Add(bottomRight_i);
+                            triangles.Add(upperRight_i);
+                            triangles.Add(upperLeft_i);
+                            triangles.Add(bottomLeft_i);
+                            triangles.Add(bottomRight_i);
+                            triangles.Add(upperLeft_i);
+                        }
+                        else
+                        {
+                            //Inner Square - "B"
+                            triangles.Add(bottomLeft_i);
+                            triangles.Add(upperRight_i);
+                            triangles.Add(upperLeft_i);
+                            triangles.Add(bottomLeft_i);
+                            triangles.Add(bottomRight_i);
+                            triangles.Add(upperRight_i);
                         }
 
-                        //Outer BR
-                        if (myVertices[7] == _blank)
-                        {
-                            myVertices[7] = vertices.Count;
-                            vertices.Add(
-                                new Vector3(
-                                    (_tileWidth * (x+1)),
-                                    0,
-                                    (_tileHeight * (y+1))
-                                    ));
-                        }
-
-                        ///Create Triangles
-                        triangles.AddRange(new int[] { myVertices[0], myVertices[1], myVertices[2] }.OrderBy(item => -item));
-                        triangles.AddRange(new int[] { myVertices[1], myVertices[2], myVertices[3] }.OrderBy(item => item));
-                        triangles.AddRange(new int[] { myVertices[1], myVertices[3], myVertices[4] }.OrderBy(item => item));
-                        triangles.AddRange(new int[] { myVertices[3], myVertices[4], myVertices[5] }.OrderBy(item => item));
-                        triangles.AddRange(new int[] { myVertices[4], myVertices[5], myVertices[7] }.OrderBy(item => item));
-                        triangles.AddRange(new int[] { myVertices[5], myVertices[6], myVertices[7] }.OrderBy(item => item));
-                        triangles.AddRange(new int[] { myVertices[0], myVertices[6], myVertices[7] }.OrderBy(item => item));
-                        triangles.AddRange(new int[] { myVertices[0], myVertices[2], myVertices[6] }.OrderBy(item => item));
-
-                        //Add to dictionary
-                        VMap.Add(new Vector2(x, y), myVertices);
+                        /*
+                        triangles.Add(bottomLeft_i);
+                        triangles.Add(bottomRight_i);
+                        triangles.Add(upperLeft_i);*/
+                        /*
+                        triangles.Add(bottomRight_i);
+                        triangles.Add(upperRight_i);
+                        triangles.Add(upperLeft_i);*/
 
                         #endregion
                     }
                 }
             }
 
+            #region Vertex Compression
+            
+            Debug.Log("Before Combine VCount: " + vertices.Count);
+
+            //Group Vertices by their position
+            var sets = vertices.Select((p, i) => new { Index = i, Pos = p })
+                .GroupBy(v => v.Pos).ToList();
+
+            //Remove duplicates
+            vertices = vertices.Distinct().ToList<Vector3>();
+
+            yield return null;
+
+            //Make the VertexMap (allows you to find a position's index in the list quickly-ish)
+            Dictionary<Vector3, int> VertexMap = vertices.Select((p, i) => new { Index = i, Pos = p })
+                .ToDictionary(i => i.Pos, j => j.Index);
+
+            //The final Map we'll use for updating the triangles
+            Dictionary<int, int> FinalMap = new Dictionary<int, int>();
+
+            //Iterate through the vertices to create the map
+            foreach(var set in sets)
+            {
+                //Grab the new position
+                int newIndex = VertexMap[set.Key];
+
+                //Add to the final map
+                foreach(var old in set)
+                {
+                    FinalMap.Add(old.Index, newIndex);
+                }
+            }
+            yield return null;
+
+            //Finally, remap everything
+            for(int t = 0; t < triangles.Count; t++)
+            {
+                triangles[t] = FinalMap[triangles[t]];
+            }
+
+            yield return null;
+            Debug.Log("After Combine VCount: " + vertices.Count);
+
+            #endregion
+
+            #region Apply "Low Poly Bumps"
+
+            for(int v = 0; v < vertices.Count; v++)
+            {
+                //Grab Vector
+                Vector3 pos = vertices[v];
+
+                //Is this an "outer vertex"?
+                if((pos.x % _tileWidth) == 0)
+                {
+                    //Apply bumps
+                    vertices[v] = new Vector3(pos.x, pos.y + Random.Range(-_bumpRange, _bumpRange/2), pos.z);
+                }
+                else
+                {
+                    //Apply bumps
+                    //vertices[v] = new Vector3(pos.x, pos.y + Random.Range(-_bumpRange, 0), pos.z);
+                }
+            }
+            yield return null;
+
+            #endregion
+
             //Render the chunk
             mesh.Clear();
             mesh.vertices = vertices.ToArray();
             mesh.triangles = triangles.ToArray();
             UnityEditor.MeshUtility.Optimize(mesh);
-            mesh.RecalculateNormals();
+            //mesh.RecalculateNormals();
         }
     }
 
@@ -325,14 +385,3 @@ public abstract class OgoWorld : MonoBehaviour
 
     #endregion
 }
-
-/// When determining how a tile should look, here is the map of vertices:
-/// Top of Tile:
-/// 1 --- 4
-/// \  /
-///   3-5\ 
-///  \2-6
-///    /  \
-/// 0 --- 7
-/// 
-/// So the 0th vertex in the dictionary corresponds to the bottom left corner, and so on, so forth

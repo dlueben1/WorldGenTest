@@ -70,7 +70,7 @@ public class AutomataChunk : OgoChunk
                     }
 
                     //Place it's new symbol
-                    nextHeightMap[y][x] = (validCount < _blankRequirement) ? (_valid) : (_blank);
+                    nextHeightMap[y][x] = (validCount < _blankRequirement) ? (_blank) : (_valid);
                 }
             }
 
